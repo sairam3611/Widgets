@@ -5,6 +5,6 @@ import "./ui/IntegerInputOnly.css";
 
 export default class IntegerInputOnly extends Component {
     render() {
-        return <HelloWorldSample sampleText={this.props.sampleText} />;
+        return <HelloWorldSample attributeVal={this.props.attribute.value} />;
     }
 }

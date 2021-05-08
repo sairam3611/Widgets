@@ -1,0 +1,33 @@
+{
+  "name": "fileuploader",
+  "widgetName": "FileUploader",
+  "version": "1.0.0",
+  "description": "this is widget used to accept a file from the user and convert that to a JSON file",
+  "copyright": "",
+  "author": "Sairam Tanniru",
+  "engines": {
+    "node": ">=12"
+  },
+  "config": {
+    "projectPath": "./tests/testProject/",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": "3000"
+  },
+  "packagePath": "",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server --open",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "license": "",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.14.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
+  }
+}

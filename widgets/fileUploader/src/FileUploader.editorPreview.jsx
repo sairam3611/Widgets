@@ -8,5 +8,5 @@ export class preview extends Component {
 }
 
 export function getPreviewCss() {
-    return require("./ui/IntegerInputOnly.css");
+    return require("./ui/FileUploader.css");
 }

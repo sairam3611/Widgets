@@ -7,7 +7,16 @@
     <description>this widget is used to take only intgers as input</description>
     <icon/>
     <properties>
-        <propertyGroup caption="General">
+        <propertyGroup caption="Data source">
+            <property key="attribute" type="attribute">
+                <caption>Attribute</caption>
+                <description>Integer/Long</description>
+                <attributeTypes>
+                    <attributeType name="Long"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
             <property key="sampleText" type="string" required="false">
                 <caption>Default value</caption>
                 <description>Sample text input</description>
