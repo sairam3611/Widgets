@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="tech tammina.scrolltext.ScrollText" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Scroll Text</name>
+    <description>this widget is used to scroll text in two directions as a info message</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Configurations">
+             <property key="dataSource" type="enumeration" defaultValue="static">
+                <caption>Data Source</caption>
+                <description>Static or Dynamic</description>
+                <enumerationValues>
+                    <enumerationValue key="static">Static</enumerationValue>
+                    <enumerationValue key="dynamic">Dynamic</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="staticText" type="string" required="false">
+                <caption>Static Text</caption>
+                <description>Static text to be scrollable</description>
+            </property>
+            <property key="dynamicText" type="attribute">
+                <caption>Dynamic text</caption>
+                <description>Text from an attribute will be taken</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                    
+                </attributeTypes>
+            </property>
+            <property key="scrollDirection" type="enumeration" defaultValue="right">
+                <caption>Scroll Direction</caption>
+                <description>choose in what what way the scroll need to scroll...</description>
+                <enumerationValues>
+                    <enumerationValue key="right">Right</enumerationValue>
+                    <enumerationValue key="left">Left</enumerationValue>
+                    <enumerationValue key="up">Up</enumerationValue>
+                    <enumerationValue key="down">Down</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
